@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+  <title>Rock Paper Scissors</title>
+  <style>
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    #results {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-   <script src="index.js">
-    console.log("Hello, World!");
-   </script>
+  <h1>Rock Paper Scissors</h1>
+  <button id="rock">Rock</button>
+  <button id="paper">Paper</button>
+  <button id="scissors">Scissors</button>
+
+  <div id="results">
+    <p id="round-result">Choose your weapon!</p>
+    <p id="score">Human: 0 | Computer: 0</p>
+    <p id="game-winner"></p>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
